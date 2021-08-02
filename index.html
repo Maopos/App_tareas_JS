@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="Css/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    
+    <title>Tareas</title>
+</head>
+<body>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <a href="/" class="navbar-brand">
+                    Lista de Tareas
+                </a>
+            </div>
+         </div>
+    </nav>
+
+    <div class="container">
+        <div class="row area-contenido">
+            <div class="col-md-1 col-xs-1 col-lg-1 col-sm-1"></div>
+            <div class="col-md-8 col-xs-8 col-lg-8 col-sm-8">
+                <div class="row area entrada">
+                    <div class="col-md-1"></div>
+                        <div class="form-group col-md-9">
+                            <input type="text" class="form-control" id= "recordatorio" placeholder="Nueva Tarea...">
+
+                        </div>
+                        <div class="form-group col-md-1">
+                            <button class="btn btn-primary" onclick="listaTareas.agregarTareaClick();">Agregar</button>
+                        </div>
+                        <br>
+                        <br>
+                        <br>
+                    <div class="col-md-1"></div>
+                </div>
+
+                <ul class="list-group" id="listaTareas"></ul>
+            </div>
+
+            <div class="col-md-1 col-xs-1 col-lg-1 col-sm-1"></div>
+        </div>
+    </div>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="Js/script.js"></script>
+</body>
+</html>
